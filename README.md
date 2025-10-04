@@ -1,10 +1,33 @@
-# Demo1 Android App
+# TPO App (Training & Placement Office)
 
-An Android application built with Gradle and Firebase integration.
+A comprehensive Android application designed to streamline the campus placement process for colleges. This app facilitates communication between students, TPO officers, and companies during campus recruitment.
 
-## Project Setup
+## Features
 
-### Prerequisites
+- **Student Management**
+  - Student profile creation and management
+  - Resume upload and management
+  - Academic details tracking
+  - Placement status updates
+
+- **Company Interface**
+  - Job posting management
+  - Candidate shortlisting
+  - Interview scheduling
+  - Offer letter distribution
+
+- **TPO Officer Dashboard**
+  - Student database management
+  - Company visit scheduling
+  - Placement statistics and analytics
+  - Bulk notifications
+
+## Technology Stack
+
+- **Frontend**: Android (Java)
+- **Backend**: Firebase Realtime Database
+- **Storage**: Firebase Cloud Storage
+- **Authentication**: Firebase Auth
 - Android Studio
 - JDK 17
 - Android SDK 34
@@ -17,32 +40,6 @@ An Android application built with Gradle and Firebase integration.
 - Firebase Database
 - Firebase Storage
 - JExcel API 2.6.12
-
-## Building the Project
-
-To build the project, use either Android Studio or run the following command:
-
-```sh
-./gradlew build
-```
-
-For Windows:
-```sh
-gradlew.bat build
-```
-
-## Testing
-
-The project includes both unit tests and instrumented tests:
-
-- Unit Tests: Located in the `app/src/test` directory
-- Instrumented Tests: Located in `app/src/androidTest` directory
-
-To run the tests:
-```sh
-./gradlew test          # Unit tests
-./gradlew connectedTest # Instrumented tests
-```
 
 ## Project Structure
 
@@ -63,7 +60,3 @@ app/
 - `targetSdk`: 34
 - `versionCode`: 1
 - `versionName`: "1.0"
-
-## License
-
-This project uses ProGuard for code optimization and obfuscation. See [proguard-rules.pro](app/proguard-rules.pro) for configuration details.
