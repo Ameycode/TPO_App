@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".home_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#B9E9FC"
+        android:padding="10dp">
+
+        <!-- Image Section -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/service_banner"
+            android:scaleType="centerCrop" />
+
+        <!-- Text Section -->
+        <TextView
+            android:id="@+id/placement_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="The Placement cell works towards the objective of placing the students on the right career path and with sole purpose of facilitating the students in the “Job Hunt” process. The main motto of any professional college is to educate the students and make them industry worthy. Now-a-days the colleges have taken it further, as to provide placements to the students. Our college too has taken up the responsibility placement and in view of that, we have a very effective Training and Placement cell.\n\nThe Training and Placement cell is nurtured by Ms. S. M Vasekar. He has a good industrial experience and with that tool he is getting many reputed companies in and around the city to come and recruit our students. The placement committee under the guidance of him undertakes various placement activities. It comprises of counseling, motivation, training and interaction with top management and students for final placement. Some of the recruiter's up till now are" />
+
+        <!-- Link Section -->
+        <TextView
+            android:id="@+id/placement_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Visit Placement Page"
+            android:textSize="16sp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:autoLink="none"
+            android:onClick="openPlacementLink" />
+    </LinearLayout>
+</ScrollView>

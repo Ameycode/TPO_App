@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#B9E9FC"
+    android:padding="10dp">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B0DAFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATION'S"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+    </Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:gravity="center"
+            android:id="@+id/et_notification_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:hint="Enter notification message"
+            android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="40dp"
+        android:layout_gravity="center"
+        app:cardElevation="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_send_notification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:text="Send Notification" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            app:srcCompat="@drawable/sendnoti" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        app:cardCornerRadius="40dp">
+        <ListView
+            android:background="#DAF5FF"
+            android:id="@+id/list_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="392dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

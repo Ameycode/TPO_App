@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B9E9FC"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/feedbackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback Details"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name: "
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/displayEnrollmentNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enrollment No: "
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/displayMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mobile No: "
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/displayFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Feedback: "
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

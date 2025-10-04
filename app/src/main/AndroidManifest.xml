@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.demo1">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/sveri_removebg_preview"
+        android:label="Placement Cell"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Demo1"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".job"
+            android:exported="false"/>
+        <activity
+            android:name=".profile"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".view_opportunity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".feedback"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".StudentDashboard"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".login"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".notification"
+            android:exported="false"/>
+        <activity
+            android:name=".company_opportunity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".AdminDashBoard"
+            android:exported="false"/>
+        <activity
+            android:name=".AddCertificates"
+            android:exported="false" />
+        <activity
+            android:name=".application_status"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_page"
+            android:exported="false"/><!-- MainActivity3 as the launcher activity -->
+        <activity
+            android:name=".student_management"
+            android:exported="false" /> <!-- MainActivity2 -->
+        <activity
+            android:name=".selected_company"
+            android:exported="false"/>
+        <activity android:name=".MainActivity2" /> <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".home_page"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
